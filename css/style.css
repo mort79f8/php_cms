@@ -53,6 +53,7 @@ li a:hover {
 
 .bg {
   height: 100%;
+  width: 100%;
   background-image: url("../img/banners2.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -87,6 +88,9 @@ article {
   margin: 2%;
   background-color: #222227;
   color: white;
+  border: 2px solid black;
+  -webkit-box-shadow: 5px 10px 8px 10px #222227;
+          box-shadow: 5px 10px 8px 10px #222227;
 }
 
 article h2 {
