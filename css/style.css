@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+header {
+  height: 50%;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #222227;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  width: 30%;
+  margin: 10px;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+li a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+
+li a:hover {
+  color: gray;
+}
+
+.bg {
+  height: 100%;
+  background-image: url("../img/banners2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 20%;
+}
+
+.form-search {
+  margin-right: 20px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+article {
+  width: 28%;
+  margin: 2%;
+  background-color: #222227;
+  color: white;
+}
+
+article h2 {
+  text-align: center;
+  padding: 5px;
+}
+
+article img {
+  width: 100%;
+}
+
+article p {
+  padding: 15px;
+}
+
+article span {
+  font-weight: bold;
+}
+
+article .tags {
+  font-size: smaller;
+}
+
+.article-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #333333;
+  font-size: small;
+}
+
+.article-footer p {
+  padding: 5px;
+}
+
+.article-footer button {
+  padding: 10px 50px;
+  margin: 5px;
+  background-color: orangered;
+  font-size: large;
+  font-weight: bold;
+}
+
+footer {
+  height: 5%;
+  background-color: #222227;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
