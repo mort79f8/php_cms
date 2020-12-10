@@ -13,42 +13,16 @@
 </head>
 
 <body>
-    <header>
 
-        <div class="navbar">
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Shop</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="nav-right">
-                <div>
-                    <ul>
-                        <li>
-                            <a href="#">Login</a>
-                        </li>
-                    </ul>
-                </div>
-                <form class="form-search" action="action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-        </div>
-        <div class="bg"></div>
-    </header>
+    <?php
+    include_once './header.php';
+    ?>
 
     <section>
-        <article>
+        <?php
+        include_once './includes/getArticles.php';
+        ?>
+        <!-- <article>
             <h2>Iwakakeru -Sport Climbing Girls</h2>
             <img src="./img/04d6e612172326ee0446efdf7aa06cf71601693621_full.jpg" alt="Iwakakeru -Sport Climbing Girls">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, quia, quidem eos asperiores, tempora
@@ -175,12 +149,16 @@
                 </div>
                 <button>Buy</button>
             </div>
-        </article>
+        </article> -->
     </section>
 
-    <footer>
-        <p>Made by: Smoketrail, Year: 2020</p>
-    </footer>
+    <?php
+    include_once 'productform.php';
+    ?>
+
+    <?php
+    include_once './footer.php';
+    ?>
     <script src="./js/script.js"></script>
 </body>
 

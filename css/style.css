@@ -58,6 +58,61 @@ li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-lastest {
+  height: 80%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #222227;
+  color: white;
+}
+
+.product-lastest .images {
+  padding: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-lastest .images img {
+  width: 200px;
+  height: 300px;
+  -webkit-box-shadow: 5px 10px 8px 10px black;
+          box-shadow: 5px 10px 8px 10px black;
+}
+
+/* 
+    The sticky class is added to the header with JS when it reaches its scroll 
+    position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav-right {
@@ -150,5 +205,110 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+}
+
+.productpage {
+  width: 90vw;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.productpage h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 4rem;
+  border: 2px solid black;
+  -webkit-box-shadow: 5px 10px 8px 10px black;
+          box-shadow: 5px 10px 8px 10px black;
+  margin: 10px;
+  margin-bottom: 50px;
+  padding: 5px;
+}
+
+.productinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.productinfo img {
+  width: 50%;
+  padding: 10px;
+}
+
+.productinfo div {
+  width: 30%;
+  margin-left: 10px;
+}
+
+.productinfo .article-footer {
+  background-color: #222227;
+}
+
+.product-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-section h2 {
+  margin: 10px;
+}
+
+.product-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80vw;
+}
+
+.product-form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-form label {
+  padding: 5px;
+  margin: 0 10px;
+  width: 250px;
+}
+
+.product-form input, .product-form textarea {
+  margin: 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.product-form input[type=submit] {
+  padding: 10px 50px;
+  margin: 5px;
+  background-color: orangered;
+  font-size: large;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
