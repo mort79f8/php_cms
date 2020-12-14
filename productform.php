@@ -2,7 +2,7 @@
 
 <section class="product-section">
     <h2>Tilføj nyt produkt</h2>
-    <form action="includes/addproduct.php" method="get" class="product-form">
+    <form action="includes/addproduct.php" method="post" class="product-form" enctype="multipart/form-data">
         <div>
             <label for="productname">Produkt navn</label>
             <input type="text" id="productname" name="productname" placeholder="Produkt navn">
@@ -25,8 +25,9 @@
             <input type="text" id="productaddedby" name="productaddedby">
         </div>
         <div>
-            <label for="productimgpath">Billede</label>
-            <input type="text" id="productimgpath" name="productimgpath">
+            <label for="fileToUpload">Billede</label>
+            <!-- <input type="text" id="productimgpath" name="productimgpath"> -->
+            <input type="file" name="fileToUpload" id="fileToUpload">
         </div>
         <div>
             <label for="productimgalt">Alternative text for billede</label>

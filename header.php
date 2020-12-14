@@ -30,6 +30,16 @@ session_start();
                             <a href="includes/logout.php" id="logout">Logout</a>
                         </li>
                     </ul>
+                <?php } elseif (isset($_SESSION["pass_error"])) {
+                ?>
+                    <ul>
+                        <li style="color: red;">
+                            <p>Wrong password</p>
+                        </li>
+                        <li>
+                            <a href="#" id="login">Login</a>
+                        </li>
+                    </ul>
                 <?php } else { ?>
                     <ul>
                         <li>
