@@ -41,7 +41,7 @@ li{
             color:gray;
         }
     }
-} 
+}
 
 .bg {
     height: 100%;
@@ -93,6 +93,25 @@ li{
     display: flex;
     justify-content: space-evenly;
     width: 20%;
+}
+
+.userform-holder {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background-color: #222227;
+    padding: 10px;
+}
+
+.userform {
+    display: flex;
+    align-items: center;
+    color: white;
+    label {
+        padding: 5px;
+    }
 }
 
 .form-search {
@@ -223,4 +242,8 @@ footer {
         font-size: large;
         font-weight: bold;
     }
+}
+
+.hidden {
+    display: none;
 }

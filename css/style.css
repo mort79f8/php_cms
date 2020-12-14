@@ -125,6 +125,34 @@ li a:hover {
   width: 20%;
 }
 
+.userform-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  background-color: #222227;
+  padding: 10px;
+}
+
+.userform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.userform label {
+  padding: 5px;
+}
+
 .form-search {
   margin-right: 20px;
 }
@@ -310,5 +338,9 @@ footer {
   background-color: orangered;
   font-size: large;
   font-weight: bold;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,4 +18,12 @@ function myFunction() {
         header.classList.remove("sticky");
     }
 
-} 
+}
+
+
+// add event to login 
+if (document.querySelector('#login')) {
+    document.querySelector('#login').addEventListener("click", () => {
+        document.querySelector(".userform-holder").classList.toggle('hidden');
+    });
+}
