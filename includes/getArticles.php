@@ -19,10 +19,12 @@ while ($row = $statement->fetch()) { ?>
         <p><span>Price:</span> <?php echo $row['productprice'] ?>$</p>
         <p class="tags">Tags: Sport</p>
         <div class="article-footer">
-            <div>
-                <p>Added by: <?php echo $row['productaddedby'] ?></p>
-                <p>Date: <?php echo $row['productaddeddate'] ?></p>
-            </div>
+            <?php if (isset($_SESSION['userlevel']) and $_SESSION['userlevel'] == 1) { ?>
+                <div>
+                    <p>Added by: <?php echo $row['productaddedby'] ?></p>
+                    <p>Date: <?php echo $row['productaddeddate'] ?></p>
+                </div>
+            <?php } ?>
             <button>Buy</button>
         </div>
     </article>

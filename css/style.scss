@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -17,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #222227;
-    align-items: center;   
+    align-items: center;    
 }
 
 nav {
@@ -63,6 +67,8 @@ li{
     align-items: center;
     background-color: #222227;
     color: white;
+    border: 2px solid black;
+    box-shadow: 5px 10px 8px 10px black;
     .images {
         padding: 10px;
         width: 100%;
@@ -103,6 +109,8 @@ li{
     right: 50px;
     background-color: #222227;
     padding: 10px;
+    border: 2px solid black;
+    box-shadow: 5px 10px 8px 10px black;
 }
 
 .userform {
