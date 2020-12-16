@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 global $_FILES;
 /* *************************************************
     file upload script start
@@ -58,7 +58,8 @@ if ($uploadOk == 0) {
         $productdesc = $_POST['productdesc'];
         $productprice = $_POST['productprice'];
         $productonsale = $_POST['productonsale'];
-        $productaddedby = $_POST['productaddedby'];
+        // $productaddedby = $_POST['productaddedby'];
+        $productaddedby = (int)$_SESSION['userid'];
         $productimgpath = htmlspecialchars(basename($_FILES["fileToUpload"]["name"]));
         $productimgalt = $_POST['productimgalt'];
 

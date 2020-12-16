@@ -4,7 +4,7 @@
 require_once "connect.php";
 
 // select all the data from the table
-$statement = $conn->prepare("SELECT * FROM products ORDER BY productId DESC");
+$statement = $conn->prepare("SELECT `products`.*, `users`.* FROM `products` JOIN `users` ON `products`.`productaddedby` = `users`.`userid` ORDER BY productId DESC");
 // execute the actions
 $statement->execute();
 
@@ -19,10 +19,12 @@ while ($row = $statement->fetch()) { ?>
         <p><span>Price:</span> <?php echo $row['productprice'] ?>$</p>
         <p class="tags">Tags: Sport</p>
         <div class="article-footer">
-            <div>
-                <p>Added by: <?php echo $row['productaddedby'] ?></p>
-                <p>Date: <?php echo $row['productaddeddate'] ?></p>
-            </div>
+            <?php if (isset($_SESSION['userlevel']) and $_SESSION['userlevel'] == 1) { ?>
+                <div>
+                    <p>Added by: <?php echo $row['userfirstname'] ?></p>
+                    <p>Date: <?php echo $row['productaddeddate'] ?></p>
+                </div>
+            <?php } ?>
             <button>Buy</button>
         </div>
     </article>

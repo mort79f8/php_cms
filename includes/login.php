@@ -13,6 +13,7 @@ if ($row = $statement->fetch()) {
     session_start();
     $_SESSION['userfirstname'] = $row['userfirstname'];
     $_SESSION['userlevel'] = $row['userlevel'];
+    $_SESSION['userid'] = $row['userid'];
     header("location: ../index.php");
 } else {
     $sql = "SELECT * FROM users WHERE username=?";

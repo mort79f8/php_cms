@@ -20,10 +20,10 @@
             <input type="hidden" id="productonsale" name="productonsale" value="0">
             <input type="checkbox" id="productonsale" name="productonsale" value="1">
         </div>
-        <div>
+        <!-- <div>
             <label for="productaddedby">Tilført af</label>
             <input type="text" id="productaddedby" name="productaddedby">
-        </div>
+        </div> -->
         <div>
             <label for="fileToUpload">Billede</label>
             <!-- <input type="text" id="productimgpath" name="productimgpath"> -->
