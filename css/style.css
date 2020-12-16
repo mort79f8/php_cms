@@ -348,6 +348,72 @@ footer {
   font-weight: bold;
 }
 
+.register-section {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 30%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  background-color: #222227;
+  color: white;
+}
+
+.register-section h2 {
+  margin: 10px;
+}
+
+.register-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register-form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register-form label {
+  padding: 5px;
+  margin: 0 10px;
+  width: 150px;
+}
+
+.register-form input, .register-form textarea {
+  margin: 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.register-form input[type=submit] {
+  padding: 10px 50px;
+  margin: 5px;
+  background-color: orangered;
+  font-size: large;
+  font-weight: bold;
+}
+
 .hidden {
   display: none;
 }

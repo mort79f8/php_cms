@@ -43,6 +43,9 @@ session_start();
                 <?php } else { ?>
                     <ul>
                         <li>
+                            <a href="register.php" id="Opretbruger">Opret bruger</a>
+                        </li>
+                        <li>
                             <a href="#" id="login">Login</a>
                         </li>
                     </ul>
