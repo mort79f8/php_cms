@@ -18,7 +18,27 @@
     $id = $_GET['id'];
     include "includes/getArticleById.php";
     ?>
-
+    <div class="article-footer">
+        <?php if (isset($_SESSION['userlevel']) and $_SESSION['userlevel'] == 1) { ?>
+            <div>
+                <p>Added by: <?php echo $puserfirstname ?></p>
+                <p>Date: <?php echo $date ?></p>
+            </div>
+            <div>
+                <a href="removeproduct.php?id=<?php echo $id ?>" class="delete-product-link">delete product</a>
+            </div>
+        <?php } elseif (isset($_SESSION['userlevel']) and $_SESSION['userlevel'] == 2 and $pusername == $_SESSION['username']) { ?>
+            <div>
+                <p>Added by: <?php echo $pusername ?></p>
+                <p>Date: <?php echo $date ?></p>
+            </div>
+            <div>
+                <a href="removeproduct.php?id=<?php echo $id ?>" class="delete-product-link">delete product</a>
+            </div>
+        <?php } ?>
+        <button>Buy</button>
+    </div>
+    </article>
 
     <?php include_once './footer.php' ?>
 </body>

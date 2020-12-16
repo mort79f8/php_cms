@@ -297,6 +297,29 @@ footer {
 
 }
 
+.delete-product-link {
+    text-decoration: none;
+    color: gray;
+    padding: 5px;
+}
+
+.delete-button {
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    &:hover {
+        cursor: default;
+    }
+    &:active {
+        outline: 1px solid white;
+    }
+
+}
+
 .hidden {
     display: none;
 }

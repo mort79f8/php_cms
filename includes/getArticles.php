@@ -24,6 +24,17 @@ while ($row = $statement->fetch()) { ?>
                     <p>Added by: <?php echo $row['userfirstname'] ?></p>
                     <p>Date: <?php echo $row['productaddeddate'] ?></p>
                 </div>
+                <div>
+                    <a href="removeproduct.php?id=<?php echo $row['productId'] ?>" class="delete-product-link">delete product</a>
+                </div>
+            <?php } elseif (isset($_SESSION['userlevel']) and $_SESSION['userlevel'] == 2 and $row['username'] == $_SESSION['username']) { ?>
+                <div>
+                    <p>Added by: <?php echo $row['userfirstname'] ?></p>
+                    <p>Date: <?php echo $row['productaddeddate'] ?></p>
+                </div>
+                <div>
+                    <a href="removeproduct.php?id=<?php echo $row['productId'] ?>" class="delete-product-link">delete product</a>
+                </div>
             <?php } ?>
             <button>Buy</button>
         </div>

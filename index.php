@@ -23,7 +23,7 @@
     </section>
 
     <?php
-    if (isset($_SESSION['userlevel']) and $_SESSION['userlevel'] == 1) {
+    if (isset($_SESSION['userlevel']) and $_SESSION['userlevel'] <= 2) {
         include_once 'productform.php';
     }
     ?>

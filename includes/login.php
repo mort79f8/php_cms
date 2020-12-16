@@ -11,6 +11,7 @@ $statement->execute([$username, $userpass]);
 
 if ($row = $statement->fetch()) {
     session_start();
+    $_SESSION['username'] = $row['username'];
     $_SESSION['userfirstname'] = $row['userfirstname'];
     $_SESSION['userlevel'] = $row['userlevel'];
     $_SESSION['userid'] = $row['userid'];
