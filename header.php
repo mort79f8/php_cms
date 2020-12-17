@@ -61,9 +61,13 @@ session_start();
                 </div>
             </div>
             <form class="form-search" action="action_page.php">
-                <input type="text" placeholder="Search.." name="search">
+                <input type="text" placeholder="Search.." name="search" id="searchfield">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
+            <div class="searchResult">
+                <ul>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="bg">

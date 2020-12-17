@@ -22,7 +22,7 @@ if (isset($_POST['rusername'])) {
     } else {
         $sql = "INSERT INTO users(username, userfirstname, userpass) VALUES(?,?,?)";
         $statement = $conn->prepare($sql);
-        $statement->execute([$formuser, $formfirst, $formpass]);
+        $statement->execute([$formuser, $formfirst, password_hash($formpass, PASSWORD_DEFAULT)]);
         $errormsg = "<h2 style='color: green'>bruger oprettet</h2>";
         header("Refresh:2; url=index.php", true, 303);
     }

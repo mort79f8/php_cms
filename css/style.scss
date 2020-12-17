@@ -320,6 +320,29 @@ footer {
 
 }
 
+.searchResult {
+    position: absolute;
+    top: 40px;
+    right:90px;
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        li{
+            background-color: white;
+            padding: 2px;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: black;
+                text-decoration: underline;
+                text-decoration-color: black;
+            }
+        }
+    }
+}
+
 .hidden {
     display: none;
 }
